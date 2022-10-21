@@ -111,10 +111,22 @@ left.addEventListener("click", function(){
    if (count > 0) {
         imgList[count].classList.add("d-none");
         imgList[count - 1].classList.remove("d-none");
+
+        titleList[count].classList.add("d-none");
+        titleList[count - 1].classList.remove("d-none");
+
+        textList[count].classList.add("d-none");
+        textList[count - 1].classList.remove("d-none");
         count--; 
     } else if (count === 0) {
         imgList[count].classList.add("d-none");
         imgList[4].classList.remove("d-none");
+
+        titleList[count].classList.add("d-none");
+        titleList[4].classList.remove("d-none");
+
+        textList[count].classList.add("d-none");
+        textList[4].classList.remove("d-none");
         count = 4;
     } 
 
